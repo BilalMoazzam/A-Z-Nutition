@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+        integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-lg-5 py-0 nav-color fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand  py-0 me-auto" href="#">
+                    <img src="logo1.jpg" alt="" width="100"
+                        height="100">
+                </a>
+                <div class="order-1 order-lg-2">
+                    <a class="text-white text-decoration-none pe-2 h6 fw-bold" href="#"><span
+                            class="ri-search-line"></span></a>
+                    <a class="text-white text-decoration-none pe-2 h6 fw-bold d-none d-lg-inline-block" href="#">
+                        <button class="btn btn-outline-none p-0 border-0 modal-trigger-button" data-toggle="modal"
+                            data-target="#sign-up-modal">
+                            <span class="ri-contacts-fill text-white"></span>
+                        </button>
+                    </a>
+                    <a class="text-white text-decoration-none pe-4 h6 fw-bold" href="#"><span
+                            class="ri-shopping-cart-2-fill"></span></a>
+                    <button type="button" class="btn btn-danger d-none d-lg-inline-block px-4 py-2 rounded-0">ORDER
+                        NOW</button>
+                </div>
+                <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><small
+                                    class="nav-text-color">HOME</small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><small
+                                    class="nav-text-color">EXPLORE AND DELEICIOUS
+                                    GALLERY</small></a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-between align-items-center">
+                            <div class="nav-link active align-items-center justify-content-center p-0"
+                                aria-current="page">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <small>Products</small>
+                                </a>
+                                <div class="dropdown-menu text-white" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#readyCook">Ready to Cook</a>
+                                    <a class="dropdown-item" href="#readyEat">Ready to Eat</a>
+                                    <a class="dropdown-item" href="#seaFood">Sea Food</a>
+                                    <a class="dropdown-item" href="#frenchFries">French Fries</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-flex justify-content-between align-items-center">
+                            <div class="nav-link active align-items-center justify-content-center p-0"
+                                aria-current="page">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" id="moreDropdown"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <small class="text-white">MORE</small>
+                                </a>
+                                <div class="dropdown-menu text-white" aria-labelledby="moreDropdown">
+                                    <a class="dropdown-item" href="#">FAQ's</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="modal my-5 " id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Menu Item Details</h5>
+                    </div>
+                    <div class="modal-body" id="sign-modal">
+                        <div class="col-12 ">
+                            <h4>Sign in or create an account</h4>
+                            <form>
+                                <div class="my-3 d-flex justify-content-between">
+                                    <label class="">E-Mail:</label>
+                                    <input class="col-8" type="email" placeholder="Enter your E-mail Address" />
+                                </div>
+                                <div class="my-3 d-flex justify-content-between">
+                                    <label class="">Password:</label>
+                                    <input class="col-8" type="password" placeholder="Enter your Password" />
+                                </div>
+                                <a class="text-decoration-none text-dark col-12" href="#">Create your Account <a
+                                        class="px-4" href="#">Click here...</a></a>
+
+                            </form>
+                            <button class="col-4 btn btn-danger px-4 py-2 my-3" type="submit">Sign-In</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-img">
+            <div class="container py-5 mt-5">
+                <div class="row align-items-center justify-content-center py-4 mt-5">
+                    <div class="text-lg-start text-center col-lg-6 mt-5 text-white image-text-data">
+                        <h1 class="display-5 fw-bold">What are you craving today?</h1>
+                        <p>Better yet, try our NEW Avocado Toast with our signature recipe Protein Muffins and
+                            Gluten
+                            Free
+                            Vegan Cookie Bites!</p>
+                        <p><small>Simple, affordable, memorablez</small></p>
+                        <button class="btn btn-danger px-5 py-3 pb-1 rounded-0">
+                            <h5>Shop Now</h5>
+                        </button>
+                    </div>
+                    <div class="col-lg-6 text-center ">
+                        <img class="col-10 col-md-12 col-lg-11 image-on-image mt-md-5 rounded-circle" src="az-15.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="up-down-pic-and-data">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="row g-3 mt-1">
+                            <div class="col-6 text-start">
+                                <img class="w-100 img-1" src="az-1.PNG" alt="">
+                            </div>
+                            <div class="col-6 text-start pe-3 img-setting">
+                                <img class="w-75 img-2" src="az-2.JPG" alt="">
+                            </div>
+                            <div class="col-6 text-end ps-3 pb-5">
+                                <img class="w-75 img-2" src="az-16.PNG" alt="">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="w-100 img-1" src="az-3.PNG" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="d-flex">
+                            <h5 class="ff-secondary mt-1 px-2 ">About Us</h5>
+                            <h5 class="font-change-of-para">____</h5>
+                        </div>
+                        <h1 class="fw-bold">Become A Loyalty Reward Membership</h1>
+                        <p>Members enjoy exclusive benefits and access.</p>
+                        <p>Choose the membership level that’s right for you.</p>
+                        <button class="btn btn-danger rounded-0 px-5 py-2">Select</button>
+                    </div>
+                </div>
+                <div class="align-items-center pt-5 mt-5">
+                    <div class="d-flex justify-content-center">
+                        <h5 class="text-danger">____</h5>
+                        <h5 class="ff-secondary mt-1 px-2">Most Popular</h5>
+                        <h5 class="text-danger">____</h5>
+                    </div>
+                    <h3 class="text-center fw-bold col-sm-8 mx-auto">Try one of our signature selections and see what
+                        everyone’s talking about</h3>
+                </div>
+            </div>
+        </div>
+        <div class="coursel-setting">
+            <div class="container">
+                <div class="my-5 pt-2">
+                    <div class="row ">
+                        <div class="col-md-4 col-12 mt-2">
+                            <button class="btn btn-outline-none p-0 border-0 modal-trigger-button" data-toggle="modal"
+                                data-target="#menuModal-1" data-modal-target="#modal-1">
+                                <div class="border border-secondary pt-3 px-3 text-start">
+
+                                    <div class="d-flex justify-content-between">
+                                        <h4>Butter Honey</h4>
+                                        <img class="image-in-coursel" src="smoothie1.png" alt="">
+                                    </div>
+                                    <p><small>$9.99</small></p>
+                                    <p>your choice of base, acai, pitaya (dragon fruit), pineapple, coconut & your
+                                        choice of 3 toppings</p>
+
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="col-md-4 col-12 mt-2">
+                            <button class="btn btn-outline-none p-0 border-0 modal-trigger-button" data-toggle="modal"
+                                data-target="#menuModal-2" data-modal-target="#modal-2">
+                                <div class="border border-secondary pt-3 px-3 text-start">
+
+                                    <div class="d-flex justify-content-between">
+                                        <h4>Butter Toast</h4>
+                                        <img class="image-in-coursel" src="smoothie2.png" alt="">
+                                    </div>
+                                    <p><small>$9.99</small></p>
+                                    <p>your choice of base, acai, pitaya (dragon fruit), pineapple, coconut & your
+                                        choice of 3 toppings</p>
+
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="col-md-4 col-12 mt-2">
+                            <button class="btn btn-outline-none p-0 border-0 modal-trigger-button" data-toggle="modal"
+                                data-target="#menuModal-3" data-modal-target="#modal-3">
+                                <div class="border border-secondary pt-3 px-3 text-start">
+
+                                    <div class="d-flex justify-content-between">
+                                        <h4>Nut Toast</h4>
+                                        <img class="image-in-coursel" src="smoothie4.png" alt="">
+                                    </div>
+                                    <p><small>$9.99</small></p>
+                                    <p>your choice of base, acai, pitaya (dragon fruit), pineapple, coconut & your
+                                        choice of 3 toppings</p>
+
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-center">
+                            <button class="btn btn-danger rounded-0 py-3 px-5 my-5 fs-5">Explore Our Menu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="menuModal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Menu Item Details</h5>
+                    </div>
+                    <div class="modal-body" id="model-1">
+                        <div class="col-12 mt-2">
+                            <div class=" pt-3 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <h4>Butter Honey</h4>
+                                    <img class="image-in-coursel" src="smoothie1.png" alt="">
+                                </div>
+                                <p><small>$9.99</small></p>
+                                <p>your choice of base, acai, pitaya (dragon fruit), pineapple, coconut & your
+                                    choice of 3 toppings</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="menuModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Menu Item Details</h5>
+                    </div>
+                    <div class="modal-body" id="model-2">
+                        <div class="col-12 mt-2">
+                            <div class="pt-3 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <h4>Butter Toast</h4>
+                                    <img class="image-in-coursel" src="smoothie2.png" alt="">
+                                </div>
+                                <p><small>$9.99</small></p>
+                                <p>your choice of base, acai, pitaya (dragon fruit), pineapple, coconut & your
+                                    choice of 3 toppings</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="menuModal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Menu Item Details</h5>
+                    </div>
+                    <div class="modal-body" id="model-3">
+                        <div class="col-12 mt-2">
+                            <div class="pt-3 px-3">
+
+                                <div class="d-flex justify-content-between">
+                                    <h4>Nut Toast</h4>
+                                    <img class="image-in-coursel" src="smoothie4.png" alt="">
+                                </div>
+                                <p><small>$9.99</small></p>
+                                <p>your choice of base, acai, pitaya (dragon fruit), pineapple, coconut & your
+                                    choice of 3 toppings</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid video-part px-0">
+            <div class="row g-0">
+                <div class="col-md-6 video ">
+                    <img class="big-img" src="az-2.jpg" alt="">
+                    <div class="circle-parent">
+                        <div class="circle-child">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 big-img-data-color p-5">
+                    <div class="mt-5 pt-5">
+                        <div class="d-flex">
+                            <h5 class="ff-secondary mt-1 px-2 ">See it in Action</h5>
+                            <h5 class="text-danger">____</h5>
+                        </div>
+                        <div>
+                            <h1 class="col-12 text-white fw-bold">Get first peek at the behind-the-scenes making of
+                                our products.</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="align-items-center pt-3 mt-5">
+                <div class="d-flex justify-content-center">
+                    <h5 class="text-danger">____</h5>
+                    <h5 class="ff-secondary mt-1 px-2">Our Menu's</h5>
+                    <h5 class="text-danger">____</h5>
+                </div>
+                <h3 class="text-center fw-bold col-sm-8 mx-auto">Delicious Smoothie Selection</h3>
+            </div>
+        </div>
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <!-- Item 1 -->
+                            <div class="col-md-4 col-6 mt-2">
+                                <div class="border border-secondary py-3 px-3">
+                                    <img class="d-block w-100" src="gallery-item8.png" alt="">
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="col-md-4 col-6 mt-2">
+                                <div class="border border-secondary py-3 px-3">
+                                    <img class="d-block w-100" src="gallery-item1.png" alt="">
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="col-md-4 col-6 mt-2">
+                                <div class="border border-secondary py-3 px-3">
+                                    <img class="d-block w-100" src="gallery-item9.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Carousel Items (Hidden) -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <!-- Additional Item 1 -->
+                            <div class="col-md-4 col-6 mt-2">
+                                <div class="border border-secondary py-3 px-3">
+                                    <img class="d-block w-100" src="gallery-item9.png" alt="">
+                                </div>
+                            </div>
+                            <!-- Additional Item 2 -->
+                            <div class="col-md-4 col-6 mt-2">
+                                <div class="border border-secondary py-3 px-3">
+                                    <img class="d-block w-100" src="gallery-item1.png" alt="">
+                                </div>
+                            </div>
+                            <!-- Additional Item 3 -->
+                            <div class="col-md-4 col-6 mt-2">
+                                <div class="border border-secondary py-3 px-3">
+                                    <img class="d-block w-100" src="gallery-item8.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Previous control with Remix Icon -->
+            <a class="carousel-control-prev mb-5 pb-5" href="#carouselExample" role="button" data-slide="prev">
+                <span class="ri-arrow-left-s-line " style="font-size: 2rem; color:red;"></span>
+
+            </a>
+            <!-- Next control with Remix Icon -->
+            <a class="carousel-control-next mb-5 pb-5" href="#carouselExample" role="button" data-slide="next">
+                <span class="ri-arrow-right-s-line" style="font-size: 2rem; color:red;"></span>
+
+            </a>
+            <div class="align-items-center pt-3 mt-5">
+                <div class="d-flex justify-content-center">
+                    <h5 class="text-danger">____</h5>
+                    <h5 class="ff-secondary mt-1 px-2">Location & Hours</h5>
+                    <h5 class="text-danger">____</h5>
+                </div>
+                <h1 class="text-center fw-bold col-sm-8 mx-auto">Our Branches</h1>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="row justify-content-evenly">
+                    <div class="col-md-5 box-with-date p-5 my-5">
+                        <h3>A-Z Nutrition&Smoothies</h3>
+                        <p class="mb-0 text-muted">1776 Eastchester Road Bronx, New York 10461</p>
+                        <p class="text-danger color-changer-box">Get directions</p>
+                        <p class="mb-0 text-danger color-changer-box">(387-855 411)</p>
+                        <p class="text-danger color-changer-box">a.z.nutrition</p>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Monday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Tuesday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Wednesday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Thursday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Friday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Saturday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Sunday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 box-with-date p-5 my-5">
+                        <h3>A-Z Nutrition&Smoothies</h3>
+                        <p class="mb-0 text-muted">1776 Eastchester Road Bronx, New York 10461</p>
+                        <p class="text-danger color-changer-box">Get directions</p>
+                        <p class="mb-0 text-danger color-changer-box">(387-855 411)</p>
+                        <p class="text-danger color-changer-box">a.z.nutrition</p>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Monday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Tuesday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Wednesday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Thursday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Friday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Saturday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Sunday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 box-with-date p-5 my-5">
+                        <h3>A-Z Nutrition&Smoothies</h3>
+                        <p class="mb-0 text-muted">1776 Eastchester Road Bronx, New York 10461</p>
+                        <p class="text-danger color-changer-box">Get directions</p>
+                        <p class="mb-0 text-danger color-changer-box">(387-855 411)</p>
+                        <p class="text-danger color-changer-box">a.z.nutrition</p>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Monday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Tuesday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Wednesday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Thursday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Friday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Saturday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Sunday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 box-with-date p-5 my-5">
+                        <h3>A-Z Nutrition&Smoothies</h3>
+                        <p class="mb-0 text-muted">1776 Eastchester Road Bronx, New York 10461</p>
+                        <p class="text-danger color-changer-box">Get directions</p>
+                        <p class="mb-0 text-danger color-changer-box">(387-855 411)</p>
+                        <p class="text-danger color-changer-box">a.z.nutrition</p>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Monday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Tuesday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Wednesday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Thursday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Friday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Saturday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+                        <div class="d-flex">
+                            <h6 class="mb-0">Sunday -</h6>
+                            <p class="mb-0 text-muted">6:00 am - 9:00 pm</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid footer-box">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="m-5">
+                        <div class="d-flex mb-3">
+                            <h5 class="ff-secondary mt-1 px-2">Link's</h5>
+                            <h5 class="text-danger">____</h5>
+                        </div>
+                        <div class="d-flex my-4">
+                            <h6 class="m-0">>></h6>
+                            <h6 class="m-0 link-container"> Home </h6>
+                        </div>
+                        <div class="d-flex my-4">
+                            <h6 class="m-0">>></h6>
+                            <h6 class="m-0 link-container"> Explore our Delicious Gallery </h6>
+                        </div>
+                        <div class="d-flex my-4">
+                            <h6 class="m-0">>></h6>
+                            <h6 class="m-0 link-container"> NEW! Sea Moss </h6>
+                        </div>
+                        <div class="d-flex my-4">
+                            <h6 class="m-0">>></h6>
+                            <h6 class="m-0 link-container"> Order Online </h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="m-5">
+                        <div class="d-flex mb-3">
+                            <h5 class="ff-secondary mt-1 px-2">Contact Us</h5>
+                            <h5 class="text-danger">____</h5>
+                        </div>
+                        <div class="d-flex">
+                            <span class="ri-map-pin-line mb-3"></span>
+                            <h6 class="mt-1 mb-3">123 Street, New York, USA</h6>
+                        </div>
+                        <div class="d-flex">
+                            <span class="ri-phone-line mb-3"></span>
+                            <h6 class="mt-1 mb-3">+123 789 45670</h6>
+                        </div>
+                        <div class="d-flex">
+                            <span class="ri-mail-line mb-3"></span>
+                            <h6 class="mt-1 mb-3">info@example.com</h6>
+                        </div>
+                        <div class="d-flex">
+                            <span class="ri-facebook-fill p-1 px-2 mx-1 animate-logos rounded-circle"></span>
+                            <span class="ri-google-fill p-1 px-2 mx-1 animate-logos rounded-circle"></span>
+                            <span class="ri-youtube-fill p-1 px-2 mx-1 animate-logos rounded-circle"></span>
+                            <span class="ri-instagram-line p-1 px-2 mx-1 animate-logos rounded-circle"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="m-5">
+                        <div class="d-flex mb-3">
+                            <h5 class="ff-secondary mt-1 px-2">Stay Updated!</h5>
+                            <h5 class="text-danger">____</h5>
+                        </div>
+                        <div class="col-12">
+                            <p>This form is protected by reCAPTCHA and the Google Privacy Policy and Terms of
+                                Service
+                                apply.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="border-danger bg-white px-3 py-2 d-flex justify-content-between">
+                                <input class="input-box" type="text" placeholder="Your Email">
+                                <button class="btn btn-danger col-12 col-md-3">SIGNUP</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="border-bottom mx-5 mb-4"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-between">
+                    <h6 class="ms-5">A-Z Nutrition & Smoothies ©2023</h6>
+                    <div class="d-flex">
+                        <h6>Privacy Policy &nbsp; |</h6>
+                        <h6> &nbsp; Terms & Condition &nbsp; |</h6>
+                        <h6>&nbsp; Help &nbsp; |</h6>
+                        <h6> &nbsp; FAQ's &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-md-12 my-4 text-center">
+                    <img src="https://betalink.website/aznutritionandsmoothie/img/googlepay.svg" alt="googlepay"
+                        class="m-1" />
+                    <img src="https://betalink.website/aznutritionandsmoothie/img/applepay.svg" alt="applepay"
+                        class="m-1" />
+                    <img src="https://betalink.website/aznutritionandsmoothie/img/visa.svg" alt="visa" class="m-1" />
+                    <img src="https://betalink.website/aznutritionandsmoothie/img/mastercard.svg" alt="mastercard"
+                        class="m-1" />
+                    <img src="https://betalink.website/aznutritionandsmoothie/img/americanexpress.svg"
+                        alt="americanexpress" class="m-1" />
+                    <img src="https://betalink.website/aznutritionandsmoothie/img/discover.svg" alt="discover"
+                        class="m-1" />
+                    <img src="https://betalink.website/aznutritionandsmoothie/img/jcb.svg" alt="jcb" class="m-1" />
+                    <img src="https://betalink.website/aznutritionandsmoothie/img/jcb.svg" alt="cashapp" class="m-1" />
+                    <img src="https://betalink.website/aznutritionandsmoothie/img/afterpay.svg" alt="afterpay"
+                        class="m-1" />
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end fixed-bottom m-5">
+            <a href="#" class="btn rounded-0 btn-danger p-3">
+                <i class="ri-arrow-up-line "></i>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+}
+
+/* NAV BAR SETING  */
+.image-of-nav-bar {
+    width: 33%;
+}
+
+.nav-color {
+    background-color: #0F172B;
+}
+
+.nav-text-color:hover {
+    color: #dc3838;
+}
+
+/* FOOTER  */
+.footer-box {
+    background-color: #0F172B;
+    color: white;
+}
+
+.box-with-date {
+    box-shadow: 2px 7px 10px 1px rgb(196, 194, 194);
+    transition: background-color 1s; 
+}
+
+.box-with-date:hover{
+    color: white;
+    background-color: #dc3838;
+}
+
+
+.box-with-date:hover .text-muted  {
+    color: white !important;
+    /* background-color: #dc3838; */
+}
+.box-with-date:hover  .color-changer-box {
+    color: white !important;
+    /* background-color: #dc3838; */
+}
+
+
+.box-with-date:hover .color-changer-box {
+    color: white;
+    /* background-color: #dc3838; */
+    /* transition: 1s; */
+}
+
+
+.link-container:hover  {
+    font-size: 17px;
+    transition: 0.4s;
+}
+
+
+
+
+.animate-logos {
+    color: white;
+    background-color: #0F172B;
+    border: 1px solid white;
+}
+
+.animate-logos:hover {
+    color: #dc3838;
+    background-color: white;
+}
+
+.input-box {
+    outline: none;
+    border: 0;
+}
+
+/* BACKGROUND IMAGE SETTING */
+.background-img {
+    background: linear-gradient(rgb(15 23 43 / 80%), rgb(15 23 43 / 80%)), url(az-5.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+.image-on-image {
+    height: 500px;
+    object-fit: cover;
+}
+
+.btn-danger {
+    background-color: #dc3838;
+}
+
+/* @media only screen and (max-width: 767px) and (min-width: 550px) {
+    .image-on-image {
+        padding-top: 30px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 75%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .image-on-image {
+        padding-top: 30px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 75%;
+    }
+} */
+
+/* MIDDLE PART SETTING  */
+.ff-secondary {
+    font-family: 'Pacifico', cursive;
+    color: #dc3838;
+}
+
+.space-between-pic {
+    --bs-gutter-y: 1rem;
+    --bs-gutter-x: 1rem;
+
+}
+
+@media (max-width: 767px) {
+    .img-1 {
+        height: 225px;
+    }
+}
+
+.img-1 {
+    height: 285px;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .img-2 {
+        height: 145px;
+    }
+}
+
+.img-2 {
+    height: 205px;
+    object-fit: cover;
+}
+
+.img-setting {
+    padding-top: 80px;
+}
+
+.bg-color-near-video {
+    background-color: rgba(13, 11, 44);
+}
+
+.video {
+    position: relative;
+}
+
+.circle-parent {
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+}
+
+.circle {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #dc3838;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50px solid #555;
+    border-bottom: 30px solid transparent;
+    top: 14px;
+    left: 25px;
+}
+
+.big-img {
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.big-img-data-color {
+    background-color: #0F172B;
+    height: 80vh;
+}
+
+.image-in-coursel {
+    height: 50px;
+    width: 15%;
+    border-radius: 75%;
+}
+
+.animate-coursel-color:hover {
+    color: white;
+    background-color: #0F172B;
+    transition: 0.8s;
+}
